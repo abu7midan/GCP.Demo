@@ -1,0 +1,9 @@
+ docker build -t gcp.demo.api .
+ docker run -d -p 5001:8080 --name gcp.demo.api.container gcp.demo.api
+
+
+
+docker stop gcp.demo.subscriper.container
+docker rm gcp.demo.subscriper.container
+ docker build -t gcp.demo.subscriper .
+docker run -d --name gcp.demo.subscriper.container gcp.demo.subscriper
